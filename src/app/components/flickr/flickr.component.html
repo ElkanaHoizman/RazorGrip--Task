@@ -1,0 +1,8 @@
+<div class="container col-4">
+    <button type="button" [disabled]='loading' class="btn btn-primary mt-4 mb-4 " (click)="clear()">refresh</button>
+    <h2>{{title}}</h2>
+    <div class="card">
+        <div class="card-body" [innerHTML]="image"></div>
+        <b>{{date | date: 'dd/MM/yyyy HH:mm:ss'}}</b>
+    </div>
+</div>
